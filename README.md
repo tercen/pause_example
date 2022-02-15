@@ -19,8 +19,8 @@ Checklist before building the image:
 * Build the image
 
 ```bash
-VERSION=0.10.0.1
-docker build -t tercen/shiny_docker_operator:$VERSION .
-docker push tercen/shiny_docker_operator:$VERSION
+VERSION=latest
+docker build -t tercen/pause_operator:$VERSION .
+docker push tercen/pause_operator:$VERSION
 git add -A && git commit -m "$VERSION" && git tag  $VERSION  && git push && git push --tags
 ```
