@@ -1,6 +1,9 @@
 FROM alpine:3.14
 
-ENTRYPOINT [ "sleep","100"]
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
+
+ENTRYPOINT ["/start.sh"]
 
 
 
